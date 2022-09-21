@@ -28,7 +28,7 @@
 		F221DDD128DB8D3600B7E275 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD028DB8D3600B7E275 /* Joke.swift */; };
 		F221DDD328DB8D7100B7E275 /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD228DB8D7100B7E275 /* FavoritesService.swift */; };
 		F221DDD628DB8F2A00B7E275 /* SearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD528DB8F2A00B7E275 /* SearchService.m */; };
-		F221DDD928DB8F3800B7E275 /* TopRatedService.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD828DB8F3800B7E275 /* TopRatedService.m */; };
+		F221DDD928DB8F3800B7E275 /* TopRatedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD828DB8F3800B7E275 /* TopRatedViewModel.m */; };
 		F241489228DBA45600CB43AD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489128DBA45600CB43AD /* APIService.swift */; };
 		F241489428DBA4CC00CB43AD /* TopRatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489328DBA4CC00CB43AD /* TopRatedResponse.swift */; };
 		F241489728DBB8B600CB43AD /* UIColor+DesignSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F241489628DBB8B600CB43AD /* UIColor+DesignSystem.m */; };
@@ -82,8 +82,8 @@
 		F221DDD228DB8D7100B7E275 /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
 		F221DDD428DB8F2A00B7E275 /* SearchService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchService.h; sourceTree = "<group>"; };
 		F221DDD528DB8F2A00B7E275 /* SearchService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchService.m; sourceTree = "<group>"; };
-		F221DDD728DB8F3800B7E275 /* TopRatedService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopRatedService.h; sourceTree = "<group>"; };
-		F221DDD828DB8F3800B7E275 /* TopRatedService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopRatedService.m; sourceTree = "<group>"; };
+		F221DDD728DB8F3800B7E275 /* TopRatedViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopRatedViewModel.h; sourceTree = "<group>"; };
+		F221DDD828DB8F3800B7E275 /* TopRatedViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopRatedViewModel.m; sourceTree = "<group>"; };
 		F241489128DBA45600CB43AD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F241489328DBA4CC00CB43AD /* TopRatedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedResponse.swift; sourceTree = "<group>"; };
 		F241489528DBB8B600CB43AD /* UIColor+DesignSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+DesignSystem.h"; sourceTree = "<group>"; };
@@ -259,8 +259,8 @@
 			children = (
 				F221DD8228DB7FEB00B7E275 /* TopRatedViewController.h */,
 				F221DD8328DB7FEB00B7E275 /* TopRatedViewController.m */,
-				F221DDD728DB8F3800B7E275 /* TopRatedService.h */,
-				F221DDD828DB8F3800B7E275 /* TopRatedService.m */,
+				F221DDD728DB8F3800B7E275 /* TopRatedViewModel.h */,
+				F221DDD828DB8F3800B7E275 /* TopRatedViewModel.m */,
 			);
 			path = TopRated;
 			sourceTree = "<group>";
@@ -420,7 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F221DDD928DB8F3800B7E275 /* TopRatedService.m in Sources */,
+				F221DDD928DB8F3800B7E275 /* TopRatedViewModel.m in Sources */,
 				F221DDCB28DB8C0A00B7E275 /* SearchViewController.swift in Sources */,
 				F221DDD328DB8D7100B7E275 /* FavoritesService.swift in Sources */,
 				F221DD8428DB7FEB00B7E275 /* TopRatedViewController.m in Sources */,

@@ -1,12 +1,11 @@
-#import "TopRatedViewController.h"
-#import "UIColor+DesignSystem.h"
 #import "frenchkit-Swift.h"
+#import "TopRatedViewController.h"
+#import "TopRatedViewModel.h"
+#import "UIColor+DesignSystem.h"
 
 @interface TopRatedViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) NSMutableArray<Joke *> *jokes;
-@property (nonatomic, assign) NSInteger nextPage;
-@property (nonatomic, strong) APIService *api;
+@property (nonatomic, strong) TopRatedViewModel *viewModel;
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
@@ -15,9 +14,7 @@
 
 - (instancetype)initWithAPI:(APIService *)api {
   if (self = [super initWithNibName:nil bundle:nil]) {
-    self.api = api;
-    self.jokes = [NSMutableArray array];
-    self.nextPage = 1;
+    self.viewModel = [[TopRatedViewModel alloc] initWithAPI:api];
 
     self.tableView = [[UITableView alloc] init];
     self.tableView.delegate = self;
@@ -48,41 +45,29 @@
 }
 
 - (void)refresh {
-  self.nextPage = 1;
-  [self.jokes removeAllObjects];
+  [self.viewModel reset];
   [self.tableView reloadData];
   [self fetchNextPage];
 }
 
 - (void)fetchNextPage {
   __weak typeof(self) weakSelf = self;
-  [self.api objc_fetchTopRatedWithPage:self.nextPage
-                        completion:^(TopRatedResponse *topRatedResponse, NSError *error) {
-    if (topRatedResponse != nil) {
-      __strong typeof(weakSelf) strongSelf = weakSelf;
-      strongSelf.nextPage = topRatedResponse.nextPage;
-      dispatch_async(dispatch_get_main_queue(), ^{
-        [strongSelf reloadDataWithJokes:topRatedResponse.results];
-      });
+  [self.viewModel fetchNextPageWithCompletion:^(NSArray<Joke *> *newJokes, NSError *error) {
+    __strong typeof(weakSelf) strongSelf = weakSelf;
+    if (error == nil) {
+      [strongSelf reloadData];
     }
   }];
 }
 
-- (void)reloadDataWithJokes:(NSArray<Joke *> *)newJokes {
+- (void)reloadData {
   [self.tableView.refreshControl endRefreshing];
-  NSMutableArray *indexPaths = [NSMutableArray arrayWithCapacity:newJokes.count];
-  for (int i = (int)self.jokes.count; i < self.jokes.count + newJokes.count; i++) {
-    [indexPaths addObject:[NSIndexPath indexPathForRow:i inSection:0]];
-  }
-  [self.tableView beginUpdates];
-  [self.jokes addObjectsFromArray:newJokes];
-  [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
-  [self.tableView endUpdates];
+  [self.tableView reloadData];
 }
 
 // MARK: - UITableViewDataSource & Delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return self.jokes.count;
+  return self.viewModel.numberOfJokes;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -91,7 +76,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
-  cell.textLabel.text = self.jokes[indexPath.row].text;
+  cell.textLabel.text = [self.viewModel jokeAtIndex:indexPath.row].text;
   cell.textLabel.numberOfLines = 0;
   cell.backgroundColor = indexPath.row % 2 == 1 ? [UIColor listItemOddBackgroundColor] : [UIColor listItemEvenBackgroundColor];
   cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -99,7 +84,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-  if (indexPath.row > self.jokes.count - 3) {
+  if (indexPath.row > self.viewModel.numberOfJokes - 3) {
     [self fetchNextPage];
   }
 }
