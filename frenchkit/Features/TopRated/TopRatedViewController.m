@@ -1,4 +1,5 @@
 #import "TopRatedViewController.h"
+#import "UIColor+DesignSystem.h"
 #import "frenchkit-Swift.h"
 
 @interface TopRatedViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -49,6 +50,7 @@
 - (void)refresh {
   self.nextPage = 1;
   [self.jokes removeAllObjects];
+  [self.tableView reloadData];
   [self fetchNextPage];
 }
 
@@ -58,18 +60,24 @@
                         completion:^(TopRatedResponse *topRatedResponse, NSError *error) {
     if (topRatedResponse != nil) {
       __strong typeof(weakSelf) strongSelf = weakSelf;
-      [strongSelf.jokes addObjectsFromArray:topRatedResponse.results];
       strongSelf.nextPage = topRatedResponse.nextPage;
       dispatch_async(dispatch_get_main_queue(), ^{
-        [strongSelf reloadData];
+        [strongSelf reloadDataWithJokes:topRatedResponse.results];
       });
     }
   }];
 }
 
-- (void)reloadData {
+- (void)reloadDataWithJokes:(NSArray<Joke *> *)newJokes {
   [self.tableView.refreshControl endRefreshing];
-  [self.tableView reloadData];
+  NSMutableArray *indexPaths = [NSMutableArray arrayWithCapacity:newJokes.count];
+  for (int i = (int)self.jokes.count; i < self.jokes.count + newJokes.count; i++) {
+    [indexPaths addObject:[NSIndexPath indexPathForRow:i inSection:0]];
+  }
+  [self.tableView beginUpdates];
+  [self.jokes addObjectsFromArray:newJokes];
+  [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+  [self.tableView endUpdates];
 }
 
 // MARK: - UITableViewDataSource & Delegate
@@ -85,7 +93,15 @@
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
   cell.textLabel.text = self.jokes[indexPath.row].text;
   cell.textLabel.numberOfLines = 0;
+  cell.backgroundColor = indexPath.row % 2 == 1 ? [UIColor listItemOddBackgroundColor] : [UIColor listItemEvenBackgroundColor];
+  cell.selectionStyle = UITableViewCellSelectionStyleNone;
   return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+  if (indexPath.row > self.jokes.count - 3) {
+    [self fetchNextPage];
+  }
 }
 
 @end

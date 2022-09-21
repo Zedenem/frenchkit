@@ -12,10 +12,10 @@ import UIKit
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = .systemBackground
-    tabBar.backgroundColor = .tertiarySystemBackground
-    tabBar.tintColor = .label
-    tabBar.unselectedItemTintColor = .tertiaryLabel
+    view.backgroundColor = .primaryBackground
+    tabBar.backgroundColor = .barBackground
+    tabBar.tintColor = .selectedTint
+    tabBar.unselectedItemTintColor = .unselectedTint
     
     self.viewControllers = [makeTopRated(),
                             makeSearch(),
