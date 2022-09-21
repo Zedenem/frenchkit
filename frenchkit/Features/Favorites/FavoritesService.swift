@@ -14,7 +14,7 @@ class FavoritesService: FavoritesServicing {
     case nothingToRemove
   }
   
-  let shared = FavoritesManager()
+  let shared = FavoritesService()
   
   private var favorites: [String: Joke] = [:]
   

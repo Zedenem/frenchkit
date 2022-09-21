@@ -1,0 +1,60 @@
+{
+    "current_page": 1,
+    "limit": 20,
+    "next_page": 1,
+    "previous_page": 1,
+    "results": [
+        {
+            "id": "YvkV8xXnjyd",
+            "joke": "Why did the cowboy have a weiner dog? Somebody told him to get a long little doggy."
+        },
+        {
+            "id": "82wHlbaapzd",
+            "joke": "Me: If humans lose the ability to hear high frequency volumes as they get older, can my 4 week old son hear a dog whistle?\r\n\r\nDoctor: No, humans can never hear that high of a frequency no matter what age they are.\r\n\r\nMe: Trick question... dogs can't whistle."
+        },
+        {
+            "id": "71wsPKeF6h",
+            "joke": "What did the dog say to the two trees? Bark bark."
+        },
+        {
+            "id": "EBQfiyXD5ob",
+            "joke": "what do you call a dog that can do magic tricks? a labracadabrador"
+        },
+        {
+            "id": "lyk3EIBQfxc",
+            "joke": "I went to the zoo the other day, there was only one dog in it. It was a shitzu."
+        },
+        {
+            "id": "DIeaUDlbUDd",
+            "joke": "“My Dog has no nose.” “How does he smell?” “Awful”"
+        },
+        {
+            "id": "GtH6E6UD5Ed",
+            "joke": "What kind of dog lives in a particle accelerator? A Fermilabrador Retriever."
+        },
+        {
+            "id": "R7UfaahVfFd",
+            "joke": "My dog used to chase people on a bike a lot. It got so bad I had to take his bike away."
+        },
+        {
+            "id": "obhFBljb2g",
+            "joke": "I adopted my dog from a blacksmith. As soon as we got home he made a bolt for the door."
+        },
+        {
+            "id": "sPRnOfiyAAd",
+            "joke": "At the boxing match, the dad got into the popcorn line and the line for hot dogs, but he wanted to stay out of the punchline."
+        },
+        {
+            "id": "AQn3wPKeqrc",
+            "joke": "It was raining cats and dogs the other day. I almost stepped in a poodle."
+        },
+        {
+            "id": "Lmjqzsr49pb",
+            "joke": "What did the Zen Buddist say to the hotdog vendor? Make me one with everything."
+        }
+    ],
+    "search_term": "dog",
+    "status": 200,
+    "total_jokes": 12,
+    "total_pages": 1
+}

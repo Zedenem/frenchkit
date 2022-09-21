@@ -1,10 +1,3 @@
-//
-//  frenchkitUITests.m
-//  frenchkitUITests
-//
-//  Created by Zouhair Mahieddine on 21/09/2022.
-//
-
 #import <XCTest/XCTest.h>
 
 @interface frenchkitUITests : XCTestCase
