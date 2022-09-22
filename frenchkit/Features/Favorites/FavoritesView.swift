@@ -8,6 +8,14 @@ struct FavoritesView: View {
   }
   
   var body: some View {
+    if viewModel.favorites.count == 0 {
+      emptyMessage
+    } else {
+      favoritesList
+    }
+  }
+  
+  var favoritesList: some View {
     List {
       ForEach(Array(viewModel.favorites.enumerated()), id: \.element.id) { index, joke in
         HStack {
@@ -30,6 +38,10 @@ struct FavoritesView: View {
             primaryButton: .destructive(Text("Yes")) { viewModel.removeFromFavorites(joke: joke) },
             secondaryButton: .cancel())
     }
+  }
+  
+  var emptyMessage: some View {
+    Text("You have no favorites")
   }
 }
 

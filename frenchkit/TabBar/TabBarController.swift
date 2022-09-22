@@ -17,9 +17,7 @@ import UIKit
     tabBar.tintColor = .selectedTint
     tabBar.unselectedItemTintColor = .unselectedTint
     
-    self.viewControllers = [makeTopRated(),
-                            makeSearch(),
-                            makeFavorites()]
+    self.viewControllers = [makeTopRated(), makeFavorites()]
   }
 }
 
@@ -30,14 +28,6 @@ extension TabBarController {
     let nav = UINavigationController(rootViewController: vc)
     vc.navigationItem.title = "Home"
     nav.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
-    return nav
-  }
-  
-  private func makeSearch() -> UIViewController {
-    let vc = SearchViewController()
-    let nav = UINavigationController(rootViewController: vc)
-    vc.navigationItem.title = "Search"
-    nav.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
     return nav
   }
   

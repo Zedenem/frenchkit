@@ -22,12 +22,10 @@
 		F221DDC228DB8A9300B7E275 /* topRated_3.json in Resources */ = {isa = PBXBuildFile; fileRef = F221DDC128DB8A9300B7E275 /* topRated_3.json */; };
 		F221DDC428DB8B3F00B7E275 /* search_cat.json in Resources */ = {isa = PBXBuildFile; fileRef = F221DDC328DB8B3F00B7E275 /* search_cat.json */; };
 		F221DDC628DB8B4B00B7E275 /* search_dog.json in Resources */ = {isa = PBXBuildFile; fileRef = F221DDC528DB8B4B00B7E275 /* search_dog.json */; };
-		F221DDCB28DB8C0A00B7E275 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDCA28DB8C0A00B7E275 /* SearchViewController.swift */; };
 		F221DDCD28DB8C4100B7E275 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDCC28DB8C4100B7E275 /* FavoritesView.swift */; };
 		F221DDCF28DB8C5E00B7E275 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDCE28DB8C5E00B7E275 /* FavoritesViewController.swift */; };
 		F221DDD128DB8D3600B7E275 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD028DB8D3600B7E275 /* Joke.swift */; };
 		F221DDD328DB8D7100B7E275 /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD228DB8D7100B7E275 /* FavoritesService.swift */; };
-		F221DDD628DB8F2A00B7E275 /* SearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD528DB8F2A00B7E275 /* SearchService.m */; };
 		F221DDD928DB8F3800B7E275 /* TopRatedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD828DB8F3800B7E275 /* TopRatedViewModel.m */; };
 		F241489228DBA45600CB43AD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489128DBA45600CB43AD /* APIService.swift */; };
 		F241489428DBA4CC00CB43AD /* TopRatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489328DBA4CC00CB43AD /* TopRatedResponse.swift */; };
@@ -77,13 +75,10 @@
 		F221DDC128DB8A9300B7E275 /* topRated_3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = topRated_3.json; sourceTree = "<group>"; };
 		F221DDC328DB8B3F00B7E275 /* search_cat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_cat.json; sourceTree = "<group>"; };
 		F221DDC528DB8B4B00B7E275 /* search_dog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_dog.json; sourceTree = "<group>"; };
-		F221DDCA28DB8C0A00B7E275 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F221DDCC28DB8C4100B7E275 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		F221DDCE28DB8C5E00B7E275 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		F221DDD028DB8D3600B7E275 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		F221DDD228DB8D7100B7E275 /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
-		F221DDD428DB8F2A00B7E275 /* SearchService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchService.h; sourceTree = "<group>"; };
-		F221DDD528DB8F2A00B7E275 /* SearchService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchService.m; sourceTree = "<group>"; };
 		F221DDD728DB8F3800B7E275 /* TopRatedViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopRatedViewModel.h; sourceTree = "<group>"; };
 		F221DDD828DB8F3800B7E275 /* TopRatedViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopRatedViewModel.m; sourceTree = "<group>"; };
 		F241489128DBA45600CB43AD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -195,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				F221DDC728DB8BD800B7E275 /* TopRated */,
-				F221DDC828DB8BDF00B7E275 /* Search */,
 				F221DDC928DB8BE400B7E275 /* Favorites */,
 			);
 			path = Features;
@@ -261,16 +255,6 @@
 				F221DDD828DB8F3800B7E275 /* TopRatedViewModel.m */,
 			);
 			path = TopRated;
-			sourceTree = "<group>";
-		};
-		F221DDC828DB8BDF00B7E275 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				F221DDCA28DB8C0A00B7E275 /* SearchViewController.swift */,
-				F221DDD428DB8F2A00B7E275 /* SearchService.h */,
-				F221DDD528DB8F2A00B7E275 /* SearchService.m */,
-			);
-			path = Search;
 			sourceTree = "<group>";
 		};
 		F221DDC928DB8BE400B7E275 /* Favorites */ = {
@@ -419,7 +403,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F221DDD928DB8F3800B7E275 /* TopRatedViewModel.m in Sources */,
-				F221DDCB28DB8C0A00B7E275 /* SearchViewController.swift in Sources */,
 				F221DDD328DB8D7100B7E275 /* FavoritesService.swift in Sources */,
 				F221DD8428DB7FEB00B7E275 /* TopRatedViewController.m in Sources */,
 				F221DDCF28DB8C5E00B7E275 /* FavoritesViewController.swift in Sources */,
@@ -434,7 +417,6 @@
 				F241489428DBA4CC00CB43AD /* TopRatedResponse.swift in Sources */,
 				F221DD8128DB7FEB00B7E275 /* SceneDelegate.m in Sources */,
 				F241489C28DBC5BF00CB43AD /* JokeTableViewCell.swift in Sources */,
-				F221DDD628DB8F2A00B7E275 /* SearchService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
