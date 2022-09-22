@@ -1,5 +1,6 @@
 #import "frenchkit-Swift.h"
 #import "TopRatedViewModel.h"
+#include <stdlib.h>
 
 @interface TopRatedViewModel ()
 
@@ -25,7 +26,6 @@
 }
 
 - (void)reset {
-  self.nextPage = 1;
   [self.jokes removeAllObjects];
 }
 

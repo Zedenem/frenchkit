@@ -45,6 +45,7 @@
 }
 
 - (void)refresh {
+  [self.tableView.refreshControl endRefreshing];
   [self.viewModel reset];
   [self.tableView reloadData];
   [self fetchNextPage];
@@ -61,7 +62,6 @@
 }
 
 - (void)reloadData {
-  [self.tableView.refreshControl endRefreshing];
   [self.tableView reloadData];
 }
 
@@ -91,12 +91,6 @@
   cell.backgroundColor = indexPath.row % 2 == 1 ? [UIColor listItemOddBackgroundColor] : [UIColor listItemEvenBackgroundColor];
   cell.selectionStyle = UITableViewCellSelectionStyleNone;
   return cell;
-}
-
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-  if (indexPath.row > self.viewModel.numberOfJokes - 3) {
-    [self fetchNextPage];
-  }
 }
 
 @end
