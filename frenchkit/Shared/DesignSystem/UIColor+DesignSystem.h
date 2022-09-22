@@ -4,6 +4,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (DesignSystem)
 
+@property (class, readonly) UIColor *accentTintColor;
 @property (class, readonly) UIColor *barBackgroundColor;
 @property (class, readonly) UIColor *listItemEvenBackgroundColor;
 @property (class, readonly) UIColor *listItemOddBackgroundColor;

@@ -3,7 +3,7 @@
 
 @interface TopRatedViewModel ()
 
-@property (nonatomic, strong) APIService *api;
+@property (nonatomic, strong) id<APIServicing> api;
 @property (nonatomic, strong) NSMutableArray<Joke *> *jokes;
 @property (nonatomic, assign) NSInteger nextPage;
 
@@ -11,7 +11,7 @@
 
 @implementation TopRatedViewModel
 
-- (instancetype)initWithAPI:(APIService *)api {
+- (instancetype)initWithAPI:(id<APIServicing>)api {
   if (self = [super init]) {
     self.api = api;
     self.jokes = [NSMutableArray array];
@@ -51,6 +51,17 @@
     return nil;
   }
   return self.jokes[index];
+}
+
+- (void)toggleFavoriteJokeAtIndex:(NSInteger)index {
+  Joke *joke = [self jokeAtIndex:index];
+  if (joke == nil) { return; }
+  
+  if ([FavoritesService.shared isFavoriteWithJokeWithId:joke.id]) {
+    [FavoritesService.shared removeFromFavoritesWithJoke:joke error:nil];
+  } else {
+    [FavoritesService.shared addToFavoritesWithJoke:joke error:nil];
+  }
 }
 
 @end

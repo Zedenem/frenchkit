@@ -32,6 +32,7 @@
 		F241489228DBA45600CB43AD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489128DBA45600CB43AD /* APIService.swift */; };
 		F241489428DBA4CC00CB43AD /* TopRatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489328DBA4CC00CB43AD /* TopRatedResponse.swift */; };
 		F241489728DBB8B600CB43AD /* UIColor+DesignSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F241489628DBB8B600CB43AD /* UIColor+DesignSystem.m */; };
+		F241489C28DBC5BF00CB43AD /* JokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		F241489328DBA4CC00CB43AD /* TopRatedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedResponse.swift; sourceTree = "<group>"; };
 		F241489528DBB8B600CB43AD /* UIColor+DesignSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+DesignSystem.h"; sourceTree = "<group>"; };
 		F241489628DBB8B600CB43AD /* UIColor+DesignSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DesignSystem.m"; sourceTree = "<group>"; };
+		F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +205,6 @@
 				F221DDB828DB829D00B7E275 /* DesignSystem */,
 				F221DDB628DB828900B7E275 /* Models */,
 				F221DDB528DB828500B7E275 /* Services */,
-				F221DDB728DB828E00B7E275 /* Utils */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -226,18 +227,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F221DDB728DB828E00B7E275 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		F221DDB828DB829D00B7E275 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
 				F241489528DBB8B600CB43AD /* UIColor+DesignSystem.h */,
 				F241489628DBB8B600CB43AD /* UIColor+DesignSystem.m */,
+				F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -434,6 +429,7 @@
 				F221DDBB28DB82BA00B7E275 /* TabBarController.swift in Sources */,
 				F241489428DBA4CC00CB43AD /* TopRatedResponse.swift in Sources */,
 				F221DD8128DB7FEB00B7E275 /* SceneDelegate.m in Sources */,
+				F241489C28DBC5BF00CB43AD /* JokeTableViewCell.swift in Sources */,
 				F221DDD628DB8F2A00B7E275 /* SearchService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

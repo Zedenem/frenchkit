@@ -2,6 +2,10 @@
 
 @implementation UIColor (DesignSystem)
 
++ (UIColor *)accentTintColor {
+  return [UIColor systemTealColor];
+}
+
 + (UIColor *)barBackgroundColor {
   return [UIColor tertiarySystemBackgroundColor];
 }

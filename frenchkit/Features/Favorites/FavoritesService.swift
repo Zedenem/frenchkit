@@ -8,28 +8,28 @@ protocol FavoritesServicing {
   var allFavorites: [Joke] { get }
 }
 
-class FavoritesService: FavoritesServicing {
+@objc class FavoritesService: NSObject, FavoritesServicing {
   enum Error: Swift.Error {
     case alreadyAdded
     case nothingToRemove
   }
   
-  let shared = FavoritesService()
+  @objc static let shared = FavoritesService()
   
   private var favorites: [String: Joke] = [:]
   
-  func isFavorite(jokeWithId id: String) -> Bool {
+  @objc func isFavorite(jokeWithId id: String) -> Bool {
     favorites.keys.contains(id)
   }
   
-  func addToFavorites(joke: Joke) throws {
+  @objc func addToFavorites(joke: Joke) throws {
     guard !isFavorite(jokeWithId: joke.id) else {
       throw Error.alreadyAdded
     }
     favorites[joke.id] = joke
   }
   
-  func removeFromFavorites(joke: Joke) throws {
+  @objc func removeFromFavorites(joke: Joke) throws {
     guard isFavorite(jokeWithId: joke.id) else {
       throw Error.nothingToRemove
     }

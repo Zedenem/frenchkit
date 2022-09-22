@@ -12,15 +12,15 @@
 
 @implementation TopRatedViewController
 
-- (instancetype)initWithAPI:(APIService *)api {
+- (instancetype)initWithAPI:(id<APIServicing>)api {
   if (self = [super initWithNibName:nil bundle:nil]) {
     self.viewModel = [[TopRatedViewModel alloc] initWithAPI:api];
 
     self.tableView = [[UITableView alloc] init];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView registerClass:[UITableViewCell class]
-           forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+    [self.tableView registerClass:[JokeTableViewCell class]
+           forCellReuseIdentifier:NSStringFromClass([JokeTableViewCell class])];
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
@@ -75,9 +75,19 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
-  cell.textLabel.text = [self.viewModel jokeAtIndex:indexPath.row].text;
-  cell.textLabel.numberOfLines = 0;
+  JokeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([JokeTableViewCell class])];
+  
+  Joke *joke = [self.viewModel jokeAtIndex:indexPath.row];
+  
+  [cell updateWith:joke.text isFavorite:[FavoritesService.shared isFavoriteWithJokeWithId:joke.id]];
+  
+  __weak typeof(self) weakSelf = self;
+  [cell setDidTapFavoritesButton:^{
+    __strong typeof(weakSelf) strongSelf = weakSelf;
+    [strongSelf.viewModel toggleFavoriteJokeAtIndex:indexPath.row];
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+  }];
+  
   cell.backgroundColor = indexPath.row % 2 == 1 ? [UIColor listItemOddBackgroundColor] : [UIColor listItemEvenBackgroundColor];
   cell.selectionStyle = UITableViewCellSelectionStyleNone;
   return cell;

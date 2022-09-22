@@ -2,13 +2,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class APIService;
+@protocol APIServicing;
 @class Joke;
 
 @interface TopRatedViewModel : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
-- (instancetype)initWithAPI:(APIService *)api NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithAPI:(id<APIServicing>)api NS_DESIGNATED_INITIALIZER;
 
 @property (nonatomic, readonly) NSInteger numberOfJokes;
 
@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)fetchNextPageWithCompletion:(void (^)(NSArray<Joke *> *newJokes, NSError *error))completion;
 
 - (Joke *)jokeAtIndex:(NSInteger)index;
+- (void)toggleFavoriteJokeAtIndex:(NSInteger)index;
 
 @end
 

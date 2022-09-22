@@ -6,8 +6,8 @@ enum APIServiceError: Error {
   case noData
 }
 
-protocol APIServicing {
-  func fetchTopRated(page: Int, completion: @escaping (Result<TopRatedResponse, Error>) -> Void)
+@objc protocol APIServicing {
+  func objc_fetchTopRated(page: Int, completion: @escaping (TopRatedResponse?, NSError?) -> Void)
 }
 
 @objc class APIService: NSObject, APIServicing {
