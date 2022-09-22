@@ -8,6 +8,10 @@ protocol FavoritesServicing {
   var allFavorites: [Joke] { get }
 }
 
+extension Notification.Name {
+  static var didUpdateFavorites = Notification.Name("DidUpdateFavorites")
+}
+
 @objc class FavoritesService: NSObject, FavoritesServicing {
   enum Error: Swift.Error {
     case alreadyAdded
@@ -27,6 +31,8 @@ protocol FavoritesServicing {
       throw Error.alreadyAdded
     }
     favorites[joke.id] = joke
+    
+    NotificationCenter.default.post(name: .didUpdateFavorites, object: self)
   }
   
   @objc func removeFromFavorites(joke: Joke) throws {
@@ -34,6 +40,8 @@ protocol FavoritesServicing {
       throw Error.nothingToRemove
     }
     favorites.removeValue(forKey: joke.id)
+    
+    NotificationCenter.default.post(name: .didUpdateFavorites, object: self)
   }
   
   var allFavorites: [Joke] {

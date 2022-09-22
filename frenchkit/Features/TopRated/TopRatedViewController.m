@@ -42,6 +42,8 @@
   ]];
   
   [self fetchNextPage];
+  
+  [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(didUpdateFavorites) name:@"DidUpdateFavorites" object:nil];
 }
 
 - (void)refresh {
@@ -56,12 +58,12 @@
   [self.viewModel fetchNextPageWithCompletion:^(NSArray<Joke *> *newJokes, NSError *error) {
     __strong typeof(weakSelf) strongSelf = weakSelf;
     if (error == nil) {
-      [strongSelf reloadData];
+      [strongSelf.tableView reloadData];
     }
   }];
 }
 
-- (void)reloadData {
+- (void)didUpdateFavorites {
   [self.tableView reloadData];
 }
 
@@ -88,7 +90,7 @@
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
   }];
   
-  cell.backgroundColor = indexPath.row % 2 == 1 ? [UIColor listItemOddBackgroundColor] : [UIColor listItemEvenBackgroundColor];
+  cell.backgroundColor = indexPath.row % 2 == 0 ? [UIColor listItemEvenBackgroundColor] : [UIColor listItemOddBackgroundColor];
   cell.selectionStyle = UITableViewCellSelectionStyleNone;
   return cell;
 }

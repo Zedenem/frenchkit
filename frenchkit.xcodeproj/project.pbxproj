@@ -33,6 +33,7 @@
 		F241489428DBA4CC00CB43AD /* TopRatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489328DBA4CC00CB43AD /* TopRatedResponse.swift */; };
 		F241489728DBB8B600CB43AD /* UIColor+DesignSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F241489628DBB8B600CB43AD /* UIColor+DesignSystem.m */; };
 		F241489C28DBC5BF00CB43AD /* JokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */; };
+		F241489E28DC50F700CB43AD /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489D28DC50F700CB43AD /* FavoritesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		F241489528DBB8B600CB43AD /* UIColor+DesignSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+DesignSystem.h"; sourceTree = "<group>"; };
 		F241489628DBB8B600CB43AD /* UIColor+DesignSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DesignSystem.m"; sourceTree = "<group>"; };
 		F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewCell.swift; sourceTree = "<group>"; };
+		F241489D28DC50F700CB43AD /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				F221DDCC28DB8C4100B7E275 /* FavoritesView.swift */,
+				F241489D28DC50F700CB43AD /* FavoritesViewModel.swift */,
 				F221DDCE28DB8C5E00B7E275 /* FavoritesViewController.swift */,
 				F221DDD228DB8D7100B7E275 /* FavoritesService.swift */,
 			);
@@ -422,6 +425,7 @@
 				F221DDCF28DB8C5E00B7E275 /* FavoritesViewController.swift in Sources */,
 				F221DD7E28DB7FEB00B7E275 /* AppDelegate.m in Sources */,
 				F221DD8F28DB7FEC00B7E275 /* main.m in Sources */,
+				F241489E28DC50F700CB43AD /* FavoritesViewModel.swift in Sources */,
 				F221DDD128DB8D3600B7E275 /* Joke.swift in Sources */,
 				F241489728DBB8B600CB43AD /* UIColor+DesignSystem.m in Sources */,
 				F221DDCD28DB8C4100B7E275 /* FavoritesView.swift in Sources */,
