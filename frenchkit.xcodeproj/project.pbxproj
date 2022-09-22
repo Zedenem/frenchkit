@@ -216,6 +216,7 @@
 			children = (
 				F221DDBC28DB87DC00B7E275 /* FakeData */,
 				F241489128DBA45600CB43AD /* APIService.swift */,
+				F221DDD228DB8D7100B7E275 /* FavoritesService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -278,7 +279,6 @@
 				F221DDCC28DB8C4100B7E275 /* FavoritesView.swift */,
 				F241489D28DC50F700CB43AD /* FavoritesViewModel.swift */,
 				F221DDCE28DB8C5E00B7E275 /* FavoritesViewController.swift */,
-				F221DDD228DB8D7100B7E275 /* FavoritesService.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
