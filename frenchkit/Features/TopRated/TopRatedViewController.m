@@ -90,7 +90,7 @@
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
   }];
   
-  cell.backgroundColor = indexPath.row % 2 == 0 ? [UIColor listItemEvenBackgroundColor] : [UIColor listItemOddBackgroundColor];
+  cell.backgroundColor = indexPath.row % 2 == 0 ? [DesignSystem_ObjcBridge listItemEvenBackgroundColor] : [UIColor listItemOddBackgroundColor];
   cell.selectionStyle = UITableViewCellSelectionStyleNone;
   return cell;
 }

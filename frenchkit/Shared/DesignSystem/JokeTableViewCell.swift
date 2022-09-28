@@ -1,3 +1,4 @@
+import DesignSystem
 import UIKit
 
 @objc class JokeTableViewCellViewModel: NSObject {
@@ -25,7 +26,7 @@ import UIKit
     button.contentEdgeInsets = .init(top: 8, left: 8, bottom: 8, right: 8)
     button.setImage(UIImage(systemName: "star"), for: .normal)
     button.setImage(UIImage(systemName: "star.fill"), for: .selected)
-    button.tintColor = .accentTint
+    button.tintColor = Colors.accentTint
     button.addTarget(self, action: #selector(toggleFavorite), for: .touchUpInside)
     return button
   }()
