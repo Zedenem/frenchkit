@@ -21,7 +21,7 @@ struct FavoritesView: View {
       ForEach(Array(viewModel.favorites.enumerated()), id: \.element.id) { index, joke in
         HStack {
           Text(joke.text)
-            .listRowBackground( Color((index % 2 == 0) ? Colors.listItemEvenBackground : UIColor.listItemOddBackground))
+            .listRowBackground( Color((index % 2 == 0) ? Colors.listItemEvenBackground : Colors.listItemOddBackground))
           Spacer()
           Button(action: {
             viewModel.jokeToRemoveFromFavorite = joke

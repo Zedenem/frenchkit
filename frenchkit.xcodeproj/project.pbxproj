@@ -26,7 +26,6 @@
 		F221DDD928DB8F3800B7E275 /* TopRatedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD828DB8F3800B7E275 /* TopRatedViewModel.m */; };
 		F241489228DBA45600CB43AD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489128DBA45600CB43AD /* APIService.swift */; };
 		F241489428DBA4CC00CB43AD /* TopRatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489328DBA4CC00CB43AD /* TopRatedResponse.swift */; };
-		F241489728DBB8B600CB43AD /* UIColor+DesignSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F241489628DBB8B600CB43AD /* UIColor+DesignSystem.m */; };
 		F241489C28DBC5BF00CB43AD /* JokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */; };
 		F241489E28DC50F700CB43AD /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489D28DC50F700CB43AD /* FavoritesViewModel.swift */; };
 		F292279928E44E9900460EC9 /* FavoritesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292279828E44E9900460EC9 /* FavoritesServiceTests.swift */; };
@@ -79,8 +78,6 @@
 		F221DDD828DB8F3800B7E275 /* TopRatedViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopRatedViewModel.m; sourceTree = "<group>"; };
 		F241489128DBA45600CB43AD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F241489328DBA4CC00CB43AD /* TopRatedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedResponse.swift; sourceTree = "<group>"; };
-		F241489528DBB8B600CB43AD /* UIColor+DesignSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+DesignSystem.h"; sourceTree = "<group>"; };
-		F241489628DBB8B600CB43AD /* UIColor+DesignSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DesignSystem.m"; sourceTree = "<group>"; };
 		F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewCell.swift; sourceTree = "<group>"; };
 		F241489D28DC50F700CB43AD /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		F292279828E44E9900460EC9 /* FavoritesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesServiceTests.swift; sourceTree = "<group>"; };
@@ -223,8 +220,6 @@
 		F221DDB828DB829D00B7E275 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				F241489528DBB8B600CB43AD /* UIColor+DesignSystem.h */,
-				F241489628DBB8B600CB43AD /* UIColor+DesignSystem.m */,
 				F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */,
 			);
 			path = DesignSystem;
@@ -433,7 +428,6 @@
 				F221DD8F28DB7FEC00B7E275 /* main.m in Sources */,
 				F241489E28DC50F700CB43AD /* FavoritesViewModel.swift in Sources */,
 				F221DDD128DB8D3600B7E275 /* Joke.swift in Sources */,
-				F241489728DBB8B600CB43AD /* UIColor+DesignSystem.m in Sources */,
 				F221DDCD28DB8C4100B7E275 /* FavoritesView.swift in Sources */,
 				F241489228DBA45600CB43AD /* APIService.swift in Sources */,
 				F221DDBB28DB82BA00B7E275 /* TabBarController.swift in Sources */,

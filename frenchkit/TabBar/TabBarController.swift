@@ -1,3 +1,4 @@
+import DesignSystem
 import UIKit
 
 @objc class TabBarController: UITabBarController {
@@ -12,10 +13,10 @@ import UIKit
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = .primaryBackground
-    tabBar.backgroundColor = .barBackground
-    tabBar.tintColor = .selectedTint
-    tabBar.unselectedItemTintColor = .unselectedTint
+    view.backgroundColor = Colors.primaryBackground
+    tabBar.backgroundColor = Colors.barBackground
+    tabBar.tintColor = Colors.selectedTint
+    tabBar.unselectedItemTintColor = Colors.unselectedTint
     
     self.viewControllers = [makeTopRated(), makeFavorites()]
   }

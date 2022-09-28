@@ -1,7 +1,6 @@
 #import "frenchkit-Swift.h"
 #import "TopRatedViewController.h"
 #import "TopRatedViewModel.h"
-#import "UIColor+DesignSystem.h"
 
 @interface TopRatedViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -90,7 +89,7 @@
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
   }];
   
-  cell.backgroundColor = indexPath.row % 2 == 0 ? [DesignSystem_ObjcBridge listItemEvenBackgroundColor] : [UIColor listItemOddBackgroundColor];
+  cell.backgroundColor = indexPath.row % 2 == 0 ? [DesignSystem_ObjcBridge listItemEvenBackgroundColor] : [DesignSystem_ObjcBridge listItemOddBackgroundColor];
   cell.selectionStyle = UITableViewCellSelectionStyleNone;
   return cell;
 }
