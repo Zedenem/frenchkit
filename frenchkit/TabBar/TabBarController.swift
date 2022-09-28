@@ -1,10 +1,8 @@
 import UIKit
-import LocalPackages
 
 @objc class TabBarController: UITabBarController {
   @objc init() {
     super.init(nibName: nil, bundle: nil)
-    print(LocalPackages().text)
   }
   
   required init?(coder: NSCoder) {
