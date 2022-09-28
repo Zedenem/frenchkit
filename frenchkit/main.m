@@ -4,8 +4,7 @@
 int main(int argc, char * argv[]) {
   NSString * appDelegateClassName;
   @autoreleasepool {
-      // Setup code that might create autoreleased objects goes here.
-      appDelegateClassName = NSStringFromClass([AppDelegate class]);
+    appDelegateClassName = NSClassFromString(@"TestingAppDelegate") != nil ? @"TestingAppDelegate" : NSStringFromClass([AppDelegate class]);
   }
   return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 }
