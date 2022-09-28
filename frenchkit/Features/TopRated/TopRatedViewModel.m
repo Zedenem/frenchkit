@@ -29,7 +29,7 @@
   [self.jokes removeAllObjects];
 }
 
-- (void)fetchNextPageWithCompletion:(void (^)(NSArray<Joke *> *newJokes, NSError *error))completion {
+- (void)fetchNextPageWithCompletion:(void (^)(NSArray<Joke *> * _Nullable newJokes, NSError * _Nullable error))completion {
   __weak typeof(self) weakSelf = self;
   [self.api objc_fetchTopRatedWithPage:self.nextPage
                             completion:^(TopRatedResponse *topRatedResponse, NSError *error) {
@@ -46,8 +46,8 @@
   }];
 }
 
-- (Joke *)jokeAtIndex:(NSInteger)index {
-  if (index < 0 && index >= self.jokes.count) {
+- (nullable Joke *)jokeAtIndex:(NSInteger)index {
+  if (index < 0 || index >= self.jokes.count) {
     return nil;
   }
   return self.jokes[index];

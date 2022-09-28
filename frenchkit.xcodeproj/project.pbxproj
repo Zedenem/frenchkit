@@ -13,9 +13,6 @@
 		F221DD8928DB7FEC00B7E275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F221DD8828DB7FEC00B7E275 /* Assets.xcassets */; };
 		F221DD8C28DB7FEC00B7E275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F221DD8A28DB7FEC00B7E275 /* LaunchScreen.storyboard */; };
 		F221DD8F28DB7FEC00B7E275 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD8E28DB7FEC00B7E275 /* main.m */; };
-		F221DD9928DB7FEC00B7E275 /* frenchkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD9828DB7FEC00B7E275 /* frenchkitTests.m */; };
-		F221DDA328DB7FEC00B7E275 /* frenchkitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DDA228DB7FEC00B7E275 /* frenchkitUITests.m */; };
-		F221DDA528DB7FEC00B7E275 /* frenchkitUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DDA428DB7FEC00B7E275 /* frenchkitUITestsLaunchTests.m */; };
 		F221DDBB28DB82BA00B7E275 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDBA28DB82BA00B7E275 /* TabBarController.swift */; };
 		F221DDBE28DB891200B7E275 /* topRated_1.json in Resources */ = {isa = PBXBuildFile; fileRef = F221DDBD28DB891200B7E275 /* topRated_1.json */; };
 		F221DDC028DB8A1B00B7E275 /* topRated_2.json in Resources */ = {isa = PBXBuildFile; fileRef = F221DDBF28DB8A1B00B7E275 /* topRated_2.json */; };
@@ -32,17 +29,16 @@
 		F241489728DBB8B600CB43AD /* UIColor+DesignSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F241489628DBB8B600CB43AD /* UIColor+DesignSystem.m */; };
 		F241489C28DBC5BF00CB43AD /* JokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */; };
 		F241489E28DC50F700CB43AD /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489D28DC50F700CB43AD /* FavoritesViewModel.swift */; };
+		F292279928E44E9900460EC9 /* FavoritesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292279828E44E9900460EC9 /* FavoritesServiceTests.swift */; };
+		F292279D28E4705C00460EC9 /* FavoritesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292279C28E4705C00460EC9 /* FavoritesViewModelTests.swift */; };
+		F292279F28E470A800460EC9 /* MockFavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292279E28E470A800460EC9 /* MockFavoritesService.swift */; };
+		F29227A128E4797A00460EC9 /* TopRated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227A028E4797A00460EC9 /* TopRated.swift */; };
+		F29227A328E4798C00460EC9 /* TopRatedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227A228E4798C00460EC9 /* TopRatedViewModelTests.swift */; };
+		F29227A928E47E9700460EC9 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227A828E47E9700460EC9 /* MockAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F221DD9528DB7FEC00B7E275 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F221DD7128DB7FEB00B7E275 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F221DD7828DB7FEB00B7E275;
-			remoteInfo = frenchkit;
-		};
-		F221DD9F28DB7FEC00B7E275 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F221DD7128DB7FEB00B7E275 /* Project object */;
 			proxyType = 1;
@@ -64,10 +60,6 @@
 		F221DD8D28DB7FEC00B7E275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F221DD8E28DB7FEC00B7E275 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F221DD9428DB7FEC00B7E275 /* frenchkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = frenchkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F221DD9828DB7FEC00B7E275 /* frenchkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = frenchkitTests.m; sourceTree = "<group>"; };
-		F221DD9E28DB7FEC00B7E275 /* frenchkitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = frenchkitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F221DDA228DB7FEC00B7E275 /* frenchkitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = frenchkitUITests.m; sourceTree = "<group>"; };
-		F221DDA428DB7FEC00B7E275 /* frenchkitUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = frenchkitUITestsLaunchTests.m; sourceTree = "<group>"; };
 		F221DDB928DB82BA00B7E275 /* frenchkit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "frenchkit-Bridging-Header.h"; sourceTree = "<group>"; };
 		F221DDBA28DB82BA00B7E275 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F221DDBD28DB891200B7E275 /* topRated_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = topRated_1.json; sourceTree = "<group>"; };
@@ -87,6 +79,13 @@
 		F241489628DBB8B600CB43AD /* UIColor+DesignSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DesignSystem.m"; sourceTree = "<group>"; };
 		F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewCell.swift; sourceTree = "<group>"; };
 		F241489D28DC50F700CB43AD /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		F292279828E44E9900460EC9 /* FavoritesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesServiceTests.swift; sourceTree = "<group>"; };
+		F292279C28E4705C00460EC9 /* FavoritesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModelTests.swift; sourceTree = "<group>"; };
+		F292279E28E470A800460EC9 /* MockFavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavoritesService.swift; sourceTree = "<group>"; };
+		F29227A028E4797A00460EC9 /* TopRated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRated.swift; sourceTree = "<group>"; };
+		F29227A228E4798C00460EC9 /* TopRatedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedViewModelTests.swift; sourceTree = "<group>"; };
+		F29227A428E47AC600460EC9 /* frenchkitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "frenchkitTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F29227A828E47E9700460EC9 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +103,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F221DD9B28DB7FEC00B7E275 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -119,7 +111,6 @@
 			children = (
 				F221DD7B28DB7FEB00B7E275 /* frenchkit */,
 				F221DD9728DB7FEC00B7E275 /* frenchkitTests */,
-				F221DDA128DB7FEC00B7E275 /* frenchkitUITests */,
 				F221DD7A28DB7FEB00B7E275 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,7 +120,6 @@
 			children = (
 				F221DD7928DB7FEB00B7E275 /* frenchkit.app */,
 				F221DD9428DB7FEC00B7E275 /* frenchkitTests.xctest */,
-				F221DD9E28DB7FEC00B7E275 /* frenchkitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,18 +143,11 @@
 		F221DD9728DB7FEC00B7E275 /* frenchkitTests */ = {
 			isa = PBXGroup;
 			children = (
-				F221DD9828DB7FEC00B7E275 /* frenchkitTests.m */,
+				F29227A428E47AC600460EC9 /* frenchkitTests-Bridging-Header.h */,
+				F292279A28E46B9200460EC9 /* Features */,
+				F292279628E44E7B00460EC9 /* Shared */,
 			);
 			path = frenchkitTests;
-			sourceTree = "<group>";
-		};
-		F221DDA128DB7FEC00B7E275 /* frenchkitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F221DDA228DB7FEC00B7E275 /* frenchkitUITests.m */,
-				F221DDA428DB7FEC00B7E275 /* frenchkitUITestsLaunchTests.m */,
-			);
-			path = frenchkitUITests;
 			sourceTree = "<group>";
 		};
 		F221DDB128DB825F00B7E275 /* App */ = {
@@ -267,6 +250,42 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
+		F292279628E44E7B00460EC9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F292279728E44E8000460EC9 /* Services */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F292279728E44E8000460EC9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F292279828E44E9900460EC9 /* FavoritesServiceTests.swift */,
+				F292279E28E470A800460EC9 /* MockFavoritesService.swift */,
+				F29227A828E47E9700460EC9 /* MockAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F292279A28E46B9200460EC9 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F292279B28E46B9B00460EC9 /* Favorites */,
+				F29227A028E4797A00460EC9 /* TopRated.swift */,
+				F29227A228E4798C00460EC9 /* TopRatedViewModelTests.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F292279B28E46B9B00460EC9 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				F292279C28E4705C00460EC9 /* FavoritesViewModelTests.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,24 +324,6 @@
 			productReference = F221DD9428DB7FEC00B7E275 /* frenchkitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F221DD9D28DB7FEC00B7E275 /* frenchkitUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F221DDAE28DB7FEC00B7E275 /* Build configuration list for PBXNativeTarget "frenchkitUITests" */;
-			buildPhases = (
-				F221DD9A28DB7FEC00B7E275 /* Sources */,
-				F221DD9B28DB7FEC00B7E275 /* Frameworks */,
-				F221DD9C28DB7FEC00B7E275 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F221DDA028DB7FEC00B7E275 /* PBXTargetDependency */,
-			);
-			name = frenchkitUITests;
-			productName = frenchkitUITests;
-			productReference = F221DD9E28DB7FEC00B7E275 /* frenchkitUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -338,10 +339,7 @@
 					};
 					F221DD9328DB7FEC00B7E275 = {
 						CreatedOnToolsVersion = 14.0;
-						TestTargetID = F221DD7828DB7FEB00B7E275;
-					};
-					F221DD9D28DB7FEC00B7E275 = {
-						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 						TestTargetID = F221DD7828DB7FEB00B7E275;
 					};
 				};
@@ -361,7 +359,6 @@
 			targets = (
 				F221DD7828DB7FEB00B7E275 /* frenchkit */,
 				F221DD9328DB7FEC00B7E275 /* frenchkitTests */,
-				F221DD9D28DB7FEC00B7E275 /* frenchkitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -382,13 +379,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F221DD9228DB7FEC00B7E275 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F221DD9C28DB7FEC00B7E275 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -424,16 +414,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F221DD9928DB7FEC00B7E275 /* frenchkitTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F221DD9A28DB7FEC00B7E275 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F221DDA328DB7FEC00B7E275 /* frenchkitUITests.m in Sources */,
-				F221DDA528DB7FEC00B7E275 /* frenchkitUITestsLaunchTests.m in Sources */,
+				F29227A128E4797A00460EC9 /* TopRated.swift in Sources */,
+				F292279D28E4705C00460EC9 /* FavoritesViewModelTests.swift in Sources */,
+				F292279F28E470A800460EC9 /* MockFavoritesService.swift in Sources */,
+				F29227A928E47E9700460EC9 /* MockAPIService.swift in Sources */,
+				F292279928E44E9900460EC9 /* FavoritesServiceTests.swift in Sources */,
+				F29227A328E4798C00460EC9 /* TopRatedViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,11 +430,6 @@
 			isa = PBXTargetDependency;
 			target = F221DD7828DB7FEB00B7E275 /* frenchkit */;
 			targetProxy = F221DD9528DB7FEC00B7E275 /* PBXContainerItemProxy */;
-		};
-		F221DDA028DB7FEC00B7E275 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F221DD7828DB7FEB00B7E275 /* frenchkit */;
-			targetProxy = F221DD9F28DB7FEC00B7E275 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -514,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -566,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -640,15 +621,23 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7M64MPPM2T;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zedenem.frenchkitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "frenchkitTests/frenchkitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/frenchkit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/frenchkit";
 			};
@@ -659,51 +648,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7M64MPPM2T;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zedenem.frenchkitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "frenchkitTests/frenchkitTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/frenchkit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/frenchkit";
-			};
-			name = Release;
-		};
-		F221DDAF28DB7FEC00B7E275 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7M64MPPM2T;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zedenem.frenchkitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = frenchkit;
-			};
-			name = Debug;
-		};
-		F221DDB028DB7FEC00B7E275 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7M64MPPM2T;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zedenem.frenchkitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = frenchkit;
 			};
 			name = Release;
 		};
@@ -733,15 +695,6 @@
 			buildConfigurations = (
 				F221DDAC28DB7FEC00B7E275 /* Debug */,
 				F221DDAD28DB7FEC00B7E275 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F221DDAE28DB7FEC00B7E275 /* Build configuration list for PBXNativeTarget "frenchkitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F221DDAF28DB7FEC00B7E275 /* Debug */,
-				F221DDB028DB7FEC00B7E275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

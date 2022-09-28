@@ -15,7 +15,7 @@ class FavoritesViewModel: ObservableObject {
                                            object: nil)
   }
   
-  @objc func didUpdateFavorites() {
+  @objc private func didUpdateFavorites() {
     favorites = self.favoritesService.allFavorites
   }
   
