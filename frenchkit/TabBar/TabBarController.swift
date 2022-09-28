@@ -26,14 +26,18 @@ extension TabBarController {
   private func makeTopRated() -> UIViewController {
     let vc = TopRatedViewController(api: APIService())
     let nav = UINavigationController(rootViewController: vc)
-    vc.navigationItem.title = "Home"
-    nav.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
+    nav.navigationBar.prefersLargeTitles = true
+    vc.navigationItem.title = "Top Rated"
+    nav.tabBarItem = UITabBarItem(title: "Top Rated",
+                                  image: UIImage(systemName: "newspaper"),
+                                  selectedImage: UIImage(systemName: "newspaper.fill"))
     return nav
   }
   
   private func makeFavorites() -> UIViewController {
     let vc = FavoritesViewController()
     let nav = UINavigationController(rootViewController: vc)
+    nav.navigationBar.prefersLargeTitles = true
     vc.navigationItem.title = "Favorites"
     nav.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
     return nav
