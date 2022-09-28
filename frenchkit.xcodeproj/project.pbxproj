@@ -36,6 +36,7 @@
 		F29227A328E4798C00460EC9 /* TopRatedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227A228E4798C00460EC9 /* TopRatedViewModelTests.swift */; };
 		F29227A928E47E9700460EC9 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227A828E47E9700460EC9 /* MockAPIService.swift */; };
 		F29227AB28E4881B00460EC9 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227AA28E4881B00460EC9 /* TestingAppDelegate.swift */; };
+		F29227BD28E498E200460EC9 /* LocalPackages in Frameworks */ = {isa = PBXBuildFile; productRef = F29227BC28E498E200460EC9 /* LocalPackages */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		F29227A428E47AC600460EC9 /* frenchkitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "frenchkitTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F29227A828E47E9700460EC9 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 		F29227AA28E4881B00460EC9 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		F29227BA28E4986D00460EC9 /* LocalPackages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LocalPackages; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29227BD28E498E200460EC9 /* LocalPackages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,9 +114,11 @@
 		F221DD7028DB7FEB00B7E275 = {
 			isa = PBXGroup;
 			children = (
+				F29227BA28E4986D00460EC9 /* LocalPackages */,
 				F221DD7B28DB7FEB00B7E275 /* frenchkit */,
 				F221DD9728DB7FEC00B7E275 /* frenchkitTests */,
 				F221DD7A28DB7FEB00B7E275 /* Products */,
+				F29227BB28E498E200460EC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,6 +294,13 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
+		F29227BB28E498E200460EC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,6 +317,9 @@
 			dependencies = (
 			);
 			name = frenchkit;
+			packageProductDependencies = (
+				F29227BC28E498E200460EC9 /* LocalPackages */,
+			);
 			productName = frenchkit;
 			productReference = F221DD7928DB7FEB00B7E275 /* frenchkit.app */;
 			productType = "com.apple.product-type.application";
@@ -704,6 +719,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F29227BC28E498E200460EC9 /* LocalPackages */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LocalPackages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F221DD7128DB7FEB00B7E275 /* Project object */;
 }
