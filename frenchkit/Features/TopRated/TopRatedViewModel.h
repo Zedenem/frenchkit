@@ -3,7 +3,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol API_ObjcBridging;
-@class Joke;
 
 @interface TopRatedViewModel : NSObject
 
@@ -13,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSInteger numberOfJokes;
 
 - (void)reset;
-- (void)fetchNextPageWithCompletion:(void (^)(NSArray<Joke *> * _Nullable newJokes, NSError * _Nullable error))completion;
+- (void)fetchNextPageWithCompletion:(void (^)(NSArray * _Nullable newJokes, NSError * _Nullable error))completion;
 
-- (nullable Joke *)jokeAtIndex:(NSInteger)index;
+- (nullable id)jokeAtIndex:(NSInteger)index;
 - (void)toggleFavoriteJokeAtIndex:(NSInteger)index;
 
 @end

@@ -33,15 +33,15 @@ class TopRatedViewModelTests: XCTestCase {
     
     let expectation = XCTestExpectation(description: "fetchNextPage should complete.")
     sut.fetchNextPage { newJokes, error in
-      XCTAssertEqual(newJokes, topRatedResponse.results)
+      XCTAssertEqual(newJokes as? [Joke], topRatedResponse.results)
       XCTAssertNil(error)
       expectation.fulfill()
     }
     wait(for: [expectation], timeout: 0.01)
     
     XCTAssertEqual(sut.numberOfJokes, topRatedResponse.results.count)
-    XCTAssertEqual(sut.joke(at: 0), topRatedResponse.results[0])
-    XCTAssertEqual(sut.joke(at: 1), topRatedResponse.results[1])
+    XCTAssertEqual(sut.joke(at: 0) as? Joke, topRatedResponse.results[0])
+    XCTAssertEqual(sut.joke(at: 1) as? Joke, topRatedResponse.results[1])
   }
   
   func testFetchNextPage_returnsError_whenError() {
