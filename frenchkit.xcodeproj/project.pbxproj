@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F21A9B6A28E57ED8003553C7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21A9B6928E57ED8003553C7 /* APIService.swift */; };
+		F21A9B6C28E5822C003553C7 /* API in Frameworks */ = {isa = PBXBuildFile; productRef = F21A9B6B28E5822C003553C7 /* API */; };
 		F221DD7E28DB7FEB00B7E275 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD7D28DB7FEB00B7E275 /* AppDelegate.m */; };
 		F221DD8128DB7FEB00B7E275 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD8028DB7FEB00B7E275 /* SceneDelegate.m */; };
 		F221DD8428DB7FEB00B7E275 /* TopRatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD8328DB7FEB00B7E275 /* TopRatedViewController.m */; };
@@ -15,11 +15,6 @@
 		F221DD8C28DB7FEC00B7E275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F221DD8A28DB7FEC00B7E275 /* LaunchScreen.storyboard */; };
 		F221DD8F28DB7FEC00B7E275 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD8E28DB7FEC00B7E275 /* main.m */; };
 		F221DDBB28DB82BA00B7E275 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDBA28DB82BA00B7E275 /* TabBarController.swift */; };
-		F221DDBE28DB891200B7E275 /* topRated_1.json in Resources */ = {isa = PBXBuildFile; fileRef = F221DDBD28DB891200B7E275 /* topRated_1.json */; };
-		F221DDC028DB8A1B00B7E275 /* topRated_2.json in Resources */ = {isa = PBXBuildFile; fileRef = F221DDBF28DB8A1B00B7E275 /* topRated_2.json */; };
-		F221DDC228DB8A9300B7E275 /* topRated_3.json in Resources */ = {isa = PBXBuildFile; fileRef = F221DDC128DB8A9300B7E275 /* topRated_3.json */; };
-		F221DDC428DB8B3F00B7E275 /* search_cat.json in Resources */ = {isa = PBXBuildFile; fileRef = F221DDC328DB8B3F00B7E275 /* search_cat.json */; };
-		F221DDC628DB8B4B00B7E275 /* search_dog.json in Resources */ = {isa = PBXBuildFile; fileRef = F221DDC528DB8B4B00B7E275 /* search_dog.json */; };
 		F221DDCD28DB8C4100B7E275 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDCC28DB8C4100B7E275 /* FavoritesView.swift */; };
 		F221DDCF28DB8C5E00B7E275 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDCE28DB8C5E00B7E275 /* FavoritesViewController.swift */; };
 		F221DDD328DB8D7100B7E275 /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD228DB8D7100B7E275 /* FavoritesService.swift */; };
@@ -49,7 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F21A9B6928E57ED8003553C7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F221DD7928DB7FEB00B7E275 /* frenchkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frenchkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F221DD7C28DB7FEB00B7E275 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F221DD7D28DB7FEB00B7E275 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,11 +58,6 @@
 		F221DD9428DB7FEC00B7E275 /* frenchkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = frenchkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F221DDB928DB82BA00B7E275 /* frenchkit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "frenchkit-Bridging-Header.h"; sourceTree = "<group>"; };
 		F221DDBA28DB82BA00B7E275 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		F221DDBD28DB891200B7E275 /* topRated_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = topRated_1.json; sourceTree = "<group>"; };
-		F221DDBF28DB8A1B00B7E275 /* topRated_2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = topRated_2.json; sourceTree = "<group>"; };
-		F221DDC128DB8A9300B7E275 /* topRated_3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = topRated_3.json; sourceTree = "<group>"; };
-		F221DDC328DB8B3F00B7E275 /* search_cat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_cat.json; sourceTree = "<group>"; };
-		F221DDC528DB8B4B00B7E275 /* search_dog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_dog.json; sourceTree = "<group>"; };
 		F221DDCC28DB8C4100B7E275 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		F221DDCE28DB8C5E00B7E275 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		F221DDD228DB8D7100B7E275 /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
@@ -93,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21A9B6C28E5822C003553C7 /* API in Frameworks */,
 				F29227C628E57B5B00460EC9 /* Model in Frameworks */,
 				F29227BF28E49BE000460EC9 /* DesignSystem in Frameworks */,
 			);
@@ -197,8 +187,6 @@
 		F221DDB528DB828500B7E275 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F221DDBC28DB87DC00B7E275 /* FakeData */,
-				F21A9B6928E57ED8003553C7 /* APIService.swift */,
 				F221DDD228DB8D7100B7E275 /* FavoritesService.swift */,
 			);
 			path = Services;
@@ -217,18 +205,6 @@
 				F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */,
 			);
 			path = DesignSystem;
-			sourceTree = "<group>";
-		};
-		F221DDBC28DB87DC00B7E275 /* FakeData */ = {
-			isa = PBXGroup;
-			children = (
-				F221DDBD28DB891200B7E275 /* topRated_1.json */,
-				F221DDBF28DB8A1B00B7E275 /* topRated_2.json */,
-				F221DDC128DB8A9300B7E275 /* topRated_3.json */,
-				F221DDC328DB8B3F00B7E275 /* search_cat.json */,
-				F221DDC528DB8B4B00B7E275 /* search_dog.json */,
-			);
-			path = FakeData;
 			sourceTree = "<group>";
 		};
 		F221DDC728DB8BD800B7E275 /* TopRated */ = {
@@ -322,6 +298,7 @@
 			packageProductDependencies = (
 				F29227BE28E49BE000460EC9 /* DesignSystem */,
 				F29227C528E57B5B00460EC9 /* Model */,
+				F21A9B6B28E5822C003553C7 /* API */,
 			);
 			productName = frenchkit;
 			productReference = F221DD7928DB7FEB00B7E275 /* frenchkit.app */;
@@ -389,12 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F221DDBE28DB891200B7E275 /* topRated_1.json in Resources */,
 				F221DD8C28DB7FEC00B7E275 /* LaunchScreen.storyboard in Resources */,
-				F221DDC028DB8A1B00B7E275 /* topRated_2.json in Resources */,
-				F221DDC228DB8A9300B7E275 /* topRated_3.json in Resources */,
-				F221DDC628DB8B4B00B7E275 /* search_dog.json in Resources */,
-				F221DDC428DB8B3F00B7E275 /* search_cat.json in Resources */,
 				F221DD8928DB7FEC00B7E275 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +394,6 @@
 				F221DD8F28DB7FEC00B7E275 /* main.m in Sources */,
 				F241489E28DC50F700CB43AD /* FavoritesViewModel.swift in Sources */,
 				F221DDCD28DB8C4100B7E275 /* FavoritesView.swift in Sources */,
-				F21A9B6A28E57ED8003553C7 /* APIService.swift in Sources */,
 				F221DDBB28DB82BA00B7E275 /* TabBarController.swift in Sources */,
 				F221DD8128DB7FEB00B7E275 /* SceneDelegate.m in Sources */,
 				F241489C28DBC5BF00CB43AD /* JokeTableViewCell.swift in Sources */,
@@ -722,6 +693,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F21A9B6B28E5822C003553C7 /* API */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = API;
+		};
 		F29227BE28E49BE000460EC9 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
