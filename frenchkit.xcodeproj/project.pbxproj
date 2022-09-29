@@ -35,7 +35,6 @@
 		F29227A328E4798C00460EC9 /* TopRatedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227A228E4798C00460EC9 /* TopRatedViewModelTests.swift */; };
 		F29227A928E47E9700460EC9 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227A828E47E9700460EC9 /* MockAPIService.swift */; };
 		F29227AB28E4881B00460EC9 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227AA28E4881B00460EC9 /* TestingAppDelegate.swift */; };
-		F29227BD28E498E200460EC9 /* LocalPackages in Frameworks */ = {isa = PBXBuildFile; productRef = F29227BC28E498E200460EC9 /* LocalPackages */; };
 		F29227BF28E49BE000460EC9 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = F29227BE28E49BE000460EC9 /* DesignSystem */; };
 		F29227C228E49CF700460EC9 /* DesignSystem_ObjcBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227C128E49CF700460EC9 /* DesignSystem_ObjcBridge.swift */; };
 /* End PBXBuildFile section */
@@ -97,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F29227BD28E498E200460EC9 /* LocalPackages in Frameworks */,
 				F29227BF28E49BE000460EC9 /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +324,6 @@
 			);
 			name = frenchkit;
 			packageProductDependencies = (
-				F29227BC28E498E200460EC9 /* LocalPackages */,
 				F29227BE28E49BE000460EC9 /* DesignSystem */,
 			);
 			productName = frenchkit;
@@ -730,10 +727,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F29227BC28E498E200460EC9 /* LocalPackages */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = LocalPackages;
-		};
 		F29227BE28E49BE000460EC9 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
