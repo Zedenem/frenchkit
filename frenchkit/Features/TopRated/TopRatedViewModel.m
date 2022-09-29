@@ -6,7 +6,7 @@
 
 @interface TopRatedViewModel ()
 
-@property (nonatomic, strong) id<APIServicing> api;
+@property (nonatomic, strong) id<API_ObjcBridging> api;
 @property (nonatomic, strong) NSMutableArray<Joke *> *jokes;
 @property (nonatomic, assign) NSInteger nextPage;
 
@@ -14,7 +14,7 @@
 
 @implementation TopRatedViewModel
 
-- (instancetype)initWithAPI:(id<APIServicing>)api {
+- (instancetype)initWithAPI:(id<API_ObjcBridging>)api {
   if (self = [super init]) {
     self.api = api;
     self.jokes = [NSMutableArray array];
@@ -33,8 +33,8 @@
 
 - (void)fetchNextPageWithCompletion:(void (^)(NSArray<Joke *> * _Nullable newJokes, NSError * _Nullable error))completion {
   __weak typeof(self) weakSelf = self;
-  [self.api objc_fetchTopRatedWithPage:self.nextPage
-                            completion:^(TopRatedResponse *topRatedResponse, NSError *error) {
+  [self.api fetchTopRatedWithPage:self.nextPage
+                completionHandler:^(TopRatedResponse *topRatedResponse, NSError *error) {
     if (error != nil) {
       completion(nil, error);
     } else if (topRatedResponse != nil) {

@@ -1,4 +1,5 @@
 @testable import frenchkit
+import Model
 
 class MockFavoritesService: FavoritesServicing {
   enum Error: Swift.Error {

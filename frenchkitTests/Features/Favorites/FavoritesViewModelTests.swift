@@ -1,6 +1,7 @@
 import XCTest
 
 @testable import frenchkit
+import Model
 
 class FavoritesViewModelTests: XCTestCase {
   func testFavorites_updatedAfterInit() {

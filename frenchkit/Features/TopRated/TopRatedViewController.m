@@ -13,7 +13,7 @@
 
 @implementation TopRatedViewController
 
-- (instancetype)initWithAPI:(id<APIServicing>)api {
+- (instancetype)initWithAPI:(id<API_ObjcBridging>)api {
   if (self = [super initWithNibName:nil bundle:nil]) {
     self.viewModel = [[TopRatedViewModel alloc] initWithAPI:api];
 

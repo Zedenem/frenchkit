@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F21A9B6C28E5822C003553C7 /* API in Frameworks */ = {isa = PBXBuildFile; productRef = F21A9B6B28E5822C003553C7 /* API */; };
+		F21A9B6E28E58CA5003553C7 /* API_ObjcBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21A9B6D28E58CA5003553C7 /* API_ObjcBridge.swift */; };
+		F21A9B7028E58DF8003553C7 /* API in Frameworks */ = {isa = PBXBuildFile; productRef = F21A9B6F28E58DF8003553C7 /* API */; };
 		F221DD7E28DB7FEB00B7E275 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD7D28DB7FEB00B7E275 /* AppDelegate.m */; };
 		F221DD8128DB7FEB00B7E275 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD8028DB7FEB00B7E275 /* SceneDelegate.m */; };
 		F221DD8428DB7FEB00B7E275 /* TopRatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD8328DB7FEB00B7E275 /* TopRatedViewController.m */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F21A9B6D28E58CA5003553C7 /* API_ObjcBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_ObjcBridge.swift; sourceTree = "<group>"; };
 		F221DD7928DB7FEB00B7E275 /* frenchkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frenchkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F221DD7C28DB7FEB00B7E275 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F221DD7D28DB7FEB00B7E275 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F21A9B6C28E5822C003553C7 /* API in Frameworks */,
+				F21A9B7028E58DF8003553C7 /* API in Frameworks */,
 				F29227C628E57B5B00460EC9 /* Model in Frameworks */,
 				F29227BF28E49BE000460EC9 /* DesignSystem in Frameworks */,
 			);
@@ -178,7 +180,6 @@
 			children = (
 				F29227C028E49CE200460EC9 /* Packages Bridges */,
 				F221DDB828DB829D00B7E275 /* DesignSystem */,
-				F221DDB628DB828900B7E275 /* Models */,
 				F221DDB528DB828500B7E275 /* Services */,
 			);
 			path = Shared;
@@ -190,13 +191,6 @@
 				F221DDD228DB8D7100B7E275 /* FavoritesService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		F221DDB628DB828900B7E275 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		F221DDB828DB829D00B7E275 /* DesignSystem */ = {
@@ -275,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				F29227C128E49CF700460EC9 /* DesignSystem_ObjcBridge.swift */,
+				F21A9B6D28E58CA5003553C7 /* API_ObjcBridge.swift */,
 			);
 			path = "Packages Bridges";
 			sourceTree = "<group>";
@@ -298,7 +293,7 @@
 			packageProductDependencies = (
 				F29227BE28E49BE000460EC9 /* DesignSystem */,
 				F29227C528E57B5B00460EC9 /* Model */,
-				F21A9B6B28E5822C003553C7 /* API */,
+				F21A9B6F28E58DF8003553C7 /* API */,
 			);
 			productName = frenchkit;
 			productReference = F221DD7928DB7FEB00B7E275 /* frenchkit.app */;
@@ -318,6 +313,8 @@
 				F221DD9628DB7FEC00B7E275 /* PBXTargetDependency */,
 			);
 			name = frenchkitTests;
+			packageProductDependencies = (
+			);
 			productName = frenchkitTests;
 			productReference = F221DD9428DB7FEC00B7E275 /* frenchkitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -386,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F221DDD928DB8F3800B7E275 /* TopRatedViewModel.m in Sources */,
+				F21A9B6E28E58CA5003553C7 /* API_ObjcBridge.swift in Sources */,
 				F29227C228E49CF700460EC9 /* DesignSystem_ObjcBridge.swift in Sources */,
 				F221DDD328DB8D7100B7E275 /* FavoritesService.swift in Sources */,
 				F221DD8428DB7FEB00B7E275 /* TopRatedViewController.m in Sources */,
@@ -693,7 +691,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F21A9B6B28E5822C003553C7 /* API */ = {
+		F21A9B6F28E58DF8003553C7 /* API */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = API;
 		};

@@ -2,13 +2,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol APIServicing;
+@protocol API_ObjcBridging;
 @class Joke;
 
 @interface TopRatedViewModel : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
-- (instancetype)initWithAPI:(id<APIServicing>)api NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithAPI:(id<API_ObjcBridging>)api NS_DESIGNATED_INITIALIZER;
 
 @property (nonatomic, readonly) NSInteger numberOfJokes;
 

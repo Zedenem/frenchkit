@@ -1,13 +1,17 @@
 @testable import frenchkit
+import Model
 
-class MockAPIService: APIServicing {
-  var objc_fetchTopRatedCallCount: Int = 0
-  var objc_fetchTopRatedLastPage: Int?
-  var completionTopRatedResponse: TopRatedResponse?
-  var completionError: NSError?
-  func objc_fetchTopRated(page: Int, completion: @escaping (TopRatedResponse?, NSError?) -> Void) {
-    objc_fetchTopRatedCallCount += 1
-    objc_fetchTopRatedLastPage = page
-    completion(completionTopRatedResponse, completionError)
+class MockAPI_ObjcBridge: NSObject, API_ObjcBridging {
+  var fetchTopRatedCallCount: Int = 0
+  var fetchTopRatedLastPage: Int?
+  var topRatedResponse: TopRatedResponse?
+  var error: NSError = NSError()
+  func fetchTopRated(page: Int) async throws -> TopRatedResponse {
+    fetchTopRatedCallCount += 1
+    fetchTopRatedLastPage = page
+    if let topRatedResponse {
+      return topRatedResponse
+    }
+    throw error
   }
 }

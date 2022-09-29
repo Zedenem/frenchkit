@@ -1,5 +1,6 @@
 import DesignSystem
 import UIKit
+import API
 
 @objc class TabBarController: UITabBarController {
   @objc init() {
@@ -25,7 +26,7 @@ import UIKit
 // MARK: - Make Tabs
 extension TabBarController {
   private func makeTopRated() -> UIViewController {
-    let vc = TopRatedViewController(api: APIService())
+    let vc = TopRatedViewController(api: API_ObjcBridge())
     let nav = UINavigationController(rootViewController: vc)
     nav.navigationBar.prefersLargeTitles = true
     vc.navigationItem.title = "Top Rated"

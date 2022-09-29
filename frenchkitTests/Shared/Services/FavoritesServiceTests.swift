@@ -1,6 +1,7 @@
 import XCTest
 
 @testable import frenchkit
+import Model
 
 class FavoritesServiceTests: XCTestCase {
   var sut: FavoritesService!

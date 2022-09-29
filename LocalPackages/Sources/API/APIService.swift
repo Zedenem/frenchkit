@@ -1,7 +1,7 @@
 import Foundation
 import Model
 
-enum APIServiceError: Error {
+public enum APIServiceError: Error {
   case serverError(Error)
   case invalidRequest
   case noData
@@ -21,4 +21,6 @@ public class APIService: APIServicing {
     decoder.keyDecodingStrategy = TopRatedResponse.keyDecodingStrategy
     return try decoder.decode(TopRatedResponse.self, from: data)
   }
+  
+  public init() {}
 }

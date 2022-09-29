@@ -14,7 +14,7 @@ import Foundation
   
   @objc public let results: [Joke]
   
-  init(previousPage: Int, currentPage: Int, nextPage: Int, limit: Int, status: Int, totalJokes: Int, totalPages: Int, results: [Joke]) {
+  public init(previousPage: Int, currentPage: Int, nextPage: Int, limit: Int, status: Int, totalJokes: Int, totalPages: Int, results: [Joke]) {
     self.previousPage = previousPage
     self.currentPage = currentPage
     self.nextPage = nextPage

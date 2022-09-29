@@ -1,21 +1,23 @@
 import XCTest
 
+import API
 @testable import frenchkit
+import Model
 
 class TopRatedViewModelTests: XCTestCase {
   var sut: TopRatedViewModel!
-  var mockAPIService: MockAPIService!
+  var mockAPI_objcBridge: MockAPI_ObjcBridge!
   
   override func setUp() {
     super.setUp()
-    mockAPIService = MockAPIService()
-    sut = TopRatedViewModel(api: mockAPIService)
+    mockAPI_objcBridge = MockAPI_ObjcBridge()
+    sut = TopRatedViewModel(api: mockAPI_objcBridge)
   }
   
   override func tearDown() {
     super.tearDown()
     sut = nil
-    mockAPIService = nil
+    mockAPI_objcBridge = nil
   }
   
   func testJokesListIsEmpty_afterInit() {
@@ -27,7 +29,7 @@ class TopRatedViewModelTests: XCTestCase {
     let joke = Joke(id: "aJokeId", text: "aJokeText")
     let topRatedResponse = TopRatedResponse(previousPage: 0, currentPage: 0, nextPage: 1, limit: 10, status: 0,
                                             totalJokes: 1, totalPages: 1, results: [joke, joke])
-    mockAPIService.completionTopRatedResponse = topRatedResponse
+    mockAPI_objcBridge.topRatedResponse = topRatedResponse
     
     let expectation = XCTestExpectation(description: "fetchNextPage should complete.")
     sut.fetchNextPage { newJokes, error in
@@ -43,11 +45,11 @@ class TopRatedViewModelTests: XCTestCase {
   }
   
   func testFetchNextPage_returnsError_whenError() {
-    mockAPIService.completionError = APIServiceError.noData as NSError
+    mockAPI_objcBridge.error = APIServiceError.noData as NSError
     
     let expectation = XCTestExpectation(description: "fetchNextPage should complete.")
     sut.fetchNextPage { newJokes, error in
-      XCTAssertEqual(error as? NSError, self.mockAPIService.completionError)
+      XCTAssertEqual(error as? NSError, self.mockAPI_objcBridge.error)
       XCTAssertNil(newJokes)
       expectation.fulfill()
     }
@@ -60,7 +62,7 @@ class TopRatedViewModelTests: XCTestCase {
     let joke = Joke(id: "aJokeId", text: "aJokeText")
     let topRatedResponse = TopRatedResponse(previousPage: 0, currentPage: 0, nextPage: 1, limit: 10, status: 0,
                                             totalJokes: 1, totalPages: 1, results: [joke, joke, joke])
-    mockAPIService.completionTopRatedResponse = topRatedResponse
+    mockAPI_objcBridge.topRatedResponse = topRatedResponse
     
     let expectation = XCTestExpectation(description: "fetchNextPage should complete.")
     sut.fetchNextPage { _, _ in expectation.fulfill() }
