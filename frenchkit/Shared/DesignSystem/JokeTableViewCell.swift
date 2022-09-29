@@ -1,4 +1,5 @@
 import DesignSystem
+import Model
 import UIKit
 
 @objc class JokeTableViewCellViewModel: NSObject {

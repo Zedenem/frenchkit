@@ -2,6 +2,8 @@
 #import "TopRatedViewModel.h"
 #include <stdlib.h>
 
+@import Model;
+
 @interface TopRatedViewModel ()
 
 @property (nonatomic, strong) id<APIServicing> api;

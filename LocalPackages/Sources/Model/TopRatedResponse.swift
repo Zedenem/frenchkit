@@ -1,18 +1,18 @@
 import Foundation
 
-@objc class TopRatedResponse: NSObject, Codable {
-  static let keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .convertFromSnakeCase
+@objc public class TopRatedResponse: NSObject, Codable {
+  public static let keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .convertFromSnakeCase
   
   let previousPage: Int
   let currentPage: Int
-  @objc let nextPage: Int
+  @objc public let nextPage: Int
   
   let limit: Int
   let status: Int
   let totalJokes: Int
   let totalPages: Int
   
-  @objc let results: [Joke]
+  @objc public let results: [Joke]
   
   init(previousPage: Int, currentPage: Int, nextPage: Int, limit: Int, status: Int, totalJokes: Int, totalPages: Int, results: [Joke]) {
     self.previousPage = previousPage

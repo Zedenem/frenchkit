@@ -1,4 +1,5 @@
 import Foundation
+import Model
 
 class FavoritesViewModel: ObservableObject {
   @Published var favorites: [Joke]

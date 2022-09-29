@@ -1,4 +1,5 @@
 import DesignSystem
+import Model
 import SwiftUI
 
 struct FavoritesView: View {

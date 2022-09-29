@@ -1,4 +1,5 @@
 import Foundation
+import Model
 
 protocol FavoritesServicing {
   func isFavorite(jokeWithId: String) -> Bool

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21A9B6A28E57ED8003553C7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21A9B6928E57ED8003553C7 /* APIService.swift */; };
 		F221DD7E28DB7FEB00B7E275 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD7D28DB7FEB00B7E275 /* AppDelegate.m */; };
 		F221DD8128DB7FEB00B7E275 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD8028DB7FEB00B7E275 /* SceneDelegate.m */; };
 		F221DD8428DB7FEB00B7E275 /* TopRatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DD8328DB7FEB00B7E275 /* TopRatedViewController.m */; };
@@ -21,11 +22,8 @@
 		F221DDC628DB8B4B00B7E275 /* search_dog.json in Resources */ = {isa = PBXBuildFile; fileRef = F221DDC528DB8B4B00B7E275 /* search_dog.json */; };
 		F221DDCD28DB8C4100B7E275 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDCC28DB8C4100B7E275 /* FavoritesView.swift */; };
 		F221DDCF28DB8C5E00B7E275 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDCE28DB8C5E00B7E275 /* FavoritesViewController.swift */; };
-		F221DDD128DB8D3600B7E275 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD028DB8D3600B7E275 /* Joke.swift */; };
 		F221DDD328DB8D7100B7E275 /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD228DB8D7100B7E275 /* FavoritesService.swift */; };
 		F221DDD928DB8F3800B7E275 /* TopRatedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F221DDD828DB8F3800B7E275 /* TopRatedViewModel.m */; };
-		F241489228DBA45600CB43AD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489128DBA45600CB43AD /* APIService.swift */; };
-		F241489428DBA4CC00CB43AD /* TopRatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489328DBA4CC00CB43AD /* TopRatedResponse.swift */; };
 		F241489C28DBC5BF00CB43AD /* JokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */; };
 		F241489E28DC50F700CB43AD /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241489D28DC50F700CB43AD /* FavoritesViewModel.swift */; };
 		F292279928E44E9900460EC9 /* FavoritesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292279828E44E9900460EC9 /* FavoritesServiceTests.swift */; };
@@ -37,6 +35,7 @@
 		F29227AB28E4881B00460EC9 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227AA28E4881B00460EC9 /* TestingAppDelegate.swift */; };
 		F29227BF28E49BE000460EC9 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = F29227BE28E49BE000460EC9 /* DesignSystem */; };
 		F29227C228E49CF700460EC9 /* DesignSystem_ObjcBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29227C128E49CF700460EC9 /* DesignSystem_ObjcBridge.swift */; };
+		F29227C628E57B5B00460EC9 /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = F29227C528E57B5B00460EC9 /* Model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F21A9B6928E57ED8003553C7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F221DD7928DB7FEB00B7E275 /* frenchkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frenchkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F221DD7C28DB7FEB00B7E275 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F221DD7D28DB7FEB00B7E275 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,12 +71,9 @@
 		F221DDC528DB8B4B00B7E275 /* search_dog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_dog.json; sourceTree = "<group>"; };
 		F221DDCC28DB8C4100B7E275 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		F221DDCE28DB8C5E00B7E275 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		F221DDD028DB8D3600B7E275 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		F221DDD228DB8D7100B7E275 /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
 		F221DDD728DB8F3800B7E275 /* TopRatedViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopRatedViewModel.h; sourceTree = "<group>"; };
 		F221DDD828DB8F3800B7E275 /* TopRatedViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopRatedViewModel.m; sourceTree = "<group>"; };
-		F241489128DBA45600CB43AD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		F241489328DBA4CC00CB43AD /* TopRatedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedResponse.swift; sourceTree = "<group>"; };
 		F241489B28DBC5BF00CB43AD /* JokeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewCell.swift; sourceTree = "<group>"; };
 		F241489D28DC50F700CB43AD /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		F292279828E44E9900460EC9 /* FavoritesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesServiceTests.swift; sourceTree = "<group>"; };
@@ -96,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29227C628E57B5B00460EC9 /* Model in Frameworks */,
 				F29227BF28E49BE000460EC9 /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				F221DDBC28DB87DC00B7E275 /* FakeData */,
-				F241489128DBA45600CB43AD /* APIService.swift */,
+				F21A9B6928E57ED8003553C7 /* APIService.swift */,
 				F221DDD228DB8D7100B7E275 /* FavoritesService.swift */,
 			);
 			path = Services;
@@ -209,8 +207,6 @@
 		F221DDB628DB828900B7E275 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F221DDD028DB8D3600B7E275 /* Joke.swift */,
-				F241489328DBA4CC00CB43AD /* TopRatedResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -325,6 +321,7 @@
 			name = frenchkit;
 			packageProductDependencies = (
 				F29227BE28E49BE000460EC9 /* DesignSystem */,
+				F29227C528E57B5B00460EC9 /* Model */,
 			);
 			productName = frenchkit;
 			productReference = F221DD7928DB7FEB00B7E275 /* frenchkit.app */;
@@ -424,11 +421,9 @@
 				F221DD7E28DB7FEB00B7E275 /* AppDelegate.m in Sources */,
 				F221DD8F28DB7FEC00B7E275 /* main.m in Sources */,
 				F241489E28DC50F700CB43AD /* FavoritesViewModel.swift in Sources */,
-				F221DDD128DB8D3600B7E275 /* Joke.swift in Sources */,
 				F221DDCD28DB8C4100B7E275 /* FavoritesView.swift in Sources */,
-				F241489228DBA45600CB43AD /* APIService.swift in Sources */,
+				F21A9B6A28E57ED8003553C7 /* APIService.swift in Sources */,
 				F221DDBB28DB82BA00B7E275 /* TabBarController.swift in Sources */,
-				F241489428DBA4CC00CB43AD /* TopRatedResponse.swift in Sources */,
 				F221DD8128DB7FEB00B7E275 /* SceneDelegate.m in Sources */,
 				F241489C28DBC5BF00CB43AD /* JokeTableViewCell.swift in Sources */,
 			);
@@ -730,6 +725,10 @@
 		F29227BE28E49BE000460EC9 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
+		};
+		F29227C528E57B5B00460EC9 /* Model */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Model;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

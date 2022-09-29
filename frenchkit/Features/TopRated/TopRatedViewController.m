@@ -2,6 +2,8 @@
 #import "TopRatedViewController.h"
 #import "TopRatedViewModel.h"
 
+@import Model;
+
 @interface TopRatedViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) TopRatedViewModel *viewModel;
