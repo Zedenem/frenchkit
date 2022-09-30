@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSInteger numberOfJokes;
 
 - (void)reset;
-- (void)fetchNextPageWithCompletion:(void (^)(NSArray * _Nullable newJokes, NSError * _Nullable error))completion;
+- (void)fetchNextPageWithCompletion:(void (^)(NSArray<Joke *> * _Nullable newJokes, NSError * _Nullable error))completion;
 
 - (nullable id)jokeAtIndex:(NSInteger)index;
 - (void)toggleFavoriteJokeAtIndex:(NSInteger)index;
